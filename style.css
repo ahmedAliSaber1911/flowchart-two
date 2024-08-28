@@ -56,6 +56,9 @@
 }
 
 /* global classes */
+
+
+/* boxed style  */
 .grayBox , .skyblueBox , .greenBox , .redBox{
     border-radius: 15px;
     display: flex;
@@ -66,6 +69,7 @@
     color: white;
     position: relative;
     z-index: 10;
+    text-align: center;
 }
 
 
@@ -84,8 +88,21 @@
 .redBox{
     background-color: var(--red);
 }
+.verySmallwidth{
+    width: 110px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
 .smallWidth{
     width: 160px;
+    height: fit-content;
+    min-height: 40px;
+}
+.middleWidth{
+    width: 225px;
 }
 .midwidth{
     width: 280px;
@@ -95,8 +112,13 @@
    height: 50px; 
 }
 
+
+
+
 /* firstline  */
-.first-line , .forth-line{
+
+/* line styles  */
+.first-line , .forth-line ,.fifth-line , .sixth-line{
     margin-bottom: 20px;
     width: 100%;
     display: flex;
@@ -116,7 +138,9 @@
 .third-line{
     margin-bottom: 0;
 }
-.second-line::after{
+
+/* vertical line  */
+.second-line::after  {
     content: '';
     position: absolute;
     width: calc(100% - 280px);
@@ -134,7 +158,12 @@
     bottom: 100%;
     left: 50%;
 }
-.second-box::before , .third-box::before , .third-box-right::after{ 
+
+/* green circle  */
+.second-box::before , .third-box::before , .third-box-right::after ,
+.fifth-right-wrapper > .fifth-box::after , .fifth-left-wrapper >  .fifth-box::after,
+.sixth-box::after , .seventh-box::after
+{ 
     content: '';
     position: absolute;
     height: 10px;
@@ -268,4 +297,180 @@
 }
 .boss-wrapper::before{
     bottom: 64%;
+}
+
+
+/* fifth line  */
+.line-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.fifth-right-wrapper{
+    position: relative;
+}
+.fifth-right-wrapper::after  {
+    content: '';
+    position: absolute;
+    height: 104px;
+    border: 2px dotted black;
+    left: -10%;
+    top: -35px;
+}
+
+
+
+
+.fifth-right-wrapper > div , .fifth-left-wrapper > div{
+    margin-bottom: 10px;
+}
+
+.fifth-right-wrapper > .fifth-box::after{
+    bottom: 14px;
+    left: -1px;    
+}
+
+.fifth-right-wrapper > .fifth-box::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 0;
+    border: 2px dotted black;
+    bottom: 17px;
+    left: -10%;  
+}
+
+.fifth-left-wrapper > .fifth-box::before{
+    content: '';
+    position: absolute;
+    width: 51%;
+    height: 0;
+    border: 2px solid black;
+    bottom: 17px;
+    right: -53%; 
+}
+
+.fifth-left-wrapper > .fifth-box::after{
+    bottom: 14px;
+    right: -10px;
+}
+
+
+
+/* line six  */
+
+.sixth-line-wrapper{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+
+}
+
+.sixth-line-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top:50%;
+    transform: translateY(-50%);
+}
+.sixth-left::after{
+    bottom: 40%;
+    right: -8px;
+}
+.sixth-right::after{
+    bottom: 40%;
+    left: 0;
+}
+
+.sixth-box::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background-color: black;
+    bottom: -11px;
+    left: 50%;
+}
+
+/* line seven  */
+
+.seventh-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
+}
+.seventh-right-wrapper , .seventh-left-wrapper{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;    
+    justify-content: start;
+}
+.row-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.highter{
+    height: 100px;
+}
+
+.seventh-box{
+    position: relative;
+}
+.seventh-box::after{
+    bottom: 95%; 
+}
+
+.seventh-right-wrapper , .seventh-left-wrapper{
+    position: relative;
+}
+.seventh-right-wrapper::after , .seventh-left-wrapper::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 43px - 122.5px );
+    background-color: black;
+    top: -17px;
+}  
+.seventh-right-wrapper::after {
+    left: 113px;
+
+}
+
+.seventh-left-wrapper::after {
+    left: 55px;
+
+}
+
+
+.seventh-box::before{
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 2px;
+    background-color: black;
+    top: -16px;
+    left: 50%;
+}
+.seventh-center-wrapper{
+    position: relative;
+}
+.seventh-center-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    left: 50%;
+    height: 230px;
+    background-color: black;
+    top: -220px;
 }
