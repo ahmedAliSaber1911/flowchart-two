@@ -643,7 +643,7 @@
   }
   .second-box::after,
   .third-box::after {
-    height: 15px;
+    height: 16px;
     width: 1px;
     left: 51%;
   }
@@ -676,11 +676,8 @@
     left: 2px;
   }
   .third::after {
-    content: "";
-    position: absolute;
     height: 50px;
     width: 1px;
-    background-color: black;
     top: -40px;
     left: -8px;
   }
@@ -701,7 +698,7 @@
     margin: 0;
   }
   .fifth-right-wrapper > .fifth-box::before {
-    width: 12px;
+    width: 14px;
     height: 1px;
     bottom: 8px;
     left: -22%;
@@ -782,6 +779,7 @@
     background-color: black;
     left: -9px;
   }
+  
   .fifth-box-wrapper > .fifth-box::before {
     width: 8%;
     height: 1px;
@@ -789,7 +787,7 @@
     left: -6px;
   }
   .fifth-right-wrapper::before {
-    width: 10%;
+    width: 25%;
     height: 1px;
     left: 96%;
     top: 9px;
@@ -801,11 +799,9 @@
     left: -10%;
   }
   .fifth-right-wrapper::after {
-    content: "";
-    position: absolute;
+ 
     height: 54px;
     width: 1px;
-    background-color: black;
     left: -15px;
     top: -13px;
   }
@@ -826,8 +822,8 @@
     right: -7%;
   }
   .seventh-center-wrapper::after {
-    height: 132px;
-    top: -127px;
+    height: 124px;
+    top: -115px;
     width: 1px;
   }
   .colors {
@@ -853,7 +849,7 @@
   .seventh-box::before {
     height: 7px;
     width: 1px;
-    top: -6px;
+    top: -7px;
     left: 48%;
   }
   .seventh-right-wrapper::after,
@@ -868,6 +864,15 @@
   .seventh-left-wrapper::after {
     left: 12px;
   }
+  .fifth-box-wrapper{
+    left: 130%;
+  }
+  .investment::after{
+    left: 55.5%;
+  }
+  .investment::before{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -875,17 +880,17 @@
     width: 100vw;
   }
   .title {
-    font-size: 9px;
+    font-size: 16px;
     display: flex;
     align-items: center;
   }
   .title-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
   .title::after {
     height: 3px;
-    bottom: 19px;
+    bottom: 10px;
   }
   .logo {
     width: 120px;
@@ -898,28 +903,31 @@
   .midwidth,
   .middleWidth {
     font-size: 5px;
-    height: 20px;
-    min-height: 10px;
+    min-height: 20px;
     line-height: 0.4rem;
   }
   .smallWidth {
-    width: 50px;
-    font-size: 3px;
+    width: 85px;
+    font-size: 6px;
+  line-height: .7rem;
+
   }
   .midwidth {
-    width: 70px;
+    width: 100px;
+    height: 20px;
   }
 
   .verySmallwidth {
-    width: 25px;
+    width: 48px;
     min-height: 20px;
     height: 25px;
-    font-size: 3px;
+    font-size: 6px;
     border-radius: 5px;
   }
   .middleWidth {
-    width: 51px;
+    width: 100px;
     min-height: 20px;
+    height: 20px;
   }
   .wideWidth {
     width: 80px;
@@ -937,19 +945,20 @@
   .fifth-line,
   .sixth-line,
   .second-line {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .second-line::after {
-    width: 81%;
-    left: 10%;
-    top: -78%;
-    height: 1px;
+        width: calc(100% - 100px);
+        left: 50px;
+        top: -100%;
+        height: 1px;
+        transform: translateX(3px);
   }
   .second-box::after,
   .third-box::after {
-    height: 15px;
+    height: 20px;
     width: 1px;
-    left: 51%;
+    left: 52%;
   }
   .third-box::after {
     height: 16px;
@@ -971,16 +980,17 @@
     width: 4px;
     left: 55%;
   }
+  .fifth-right-wrapper > .fifth-box::after{
+    left: 2%;
+
+  }
   .third-box-right::after {
     left: 2px;
   }
   .third::after {
-    content: "";
-    position: absolute;
-    height: 50px;
+    height: 60px;
     width: 1px;
-    background-color: black;
-    top: -40px;
+    top: -50px;
     left: -8px;
   }
 
@@ -994,12 +1004,21 @@
     border: 1px dotted black;
     top: 11px;
   }
+  .forth-line-wrapper::after{
+    width: calc(100% - 95px);
+    border: 1px dotted black;
+    top: 11px;
+    transform: translateX(1px);
+  }
   .split {
     height: 20px;
-    margin: 0;
+    margin: 10px;
   }
   .fifth-right-wrapper > .fifth-box::before {
-    display: none;
+    width: 14px;
+    height: 1px;
+    bottom: 8px;
+    left: -15%;
   }
   .third-box-container::before {
     height: 12px;
@@ -1029,6 +1048,7 @@
     height: 1px;
     bottom: 82%;
     background-color: black;
+    transform: translateX(2px);
   }
 
   .boss,
@@ -1053,15 +1073,15 @@
   }
   .boss-container::after {
     left: -1px;
-    top: 12px;
+    top: 10px;
   }
   .boss-wrapper::after {
     content: "";
     position: absolute;
-    height: 67px;
+    height: 77px;
     width: 1px;
     background-color: black;
-    top: -60px;
+    top: -70px;
     left: -9px;
   }
   .boss-container::before {
@@ -1076,17 +1096,21 @@
     width: 10px;
     background-color: black;
     left: -9px;
+    bottom: 69%;
+  }
+  .third-box-right::before{
+    bottom: 55%;
   }
   .fifth-box-wrapper > .fifth-box::before {
-    width: 8%;
+    width: 11%;
     height: 1px;
     top: 9px;
-    left: -6px;
+    left: -11px;
   }
   .fifth-right-wrapper::before {
-    width: 10%;
+    width: 9%;
     height: 1px;
-    left: 96%;
+    left: 95%;
     top: 9px;
   }
   .fifth-box-wrapper::after {
@@ -1096,15 +1120,21 @@
     left: -10%;
   }
   .fifth-right-wrapper::after {
-    display: none;
+    height: 60px;
+    width: 1px;
+    left: -15px;
+    top: -19px;
+  }
+  .sixth-line{
+    margin-bottom: 20px;
   }
   .sixth-line-wrapper::after {
     height: 1px;
   }
   .sixth-box::before {
     width: 1px;
-    height: 5px;
-    bottom: -5px;
+    height: 11px;
+    bottom: -11px;
     left: 50%;
   }
 
@@ -1120,11 +1150,11 @@
     width: 1px;
   }
   .colors {
-    width: 150px;
+    width: 200px;
     height: 20px;
   }
   .colors > div {
-    font-size: 3px;
+    font-size: 4px;
   }
   .square {
     width: 10px;
@@ -1138,24 +1168,35 @@
     row-gap: 2px;
   }
   .seventh-box::before {
-    height: 7px;
+    height: 10px;
     width: 1px;
-    top: -6px;
-    left: 49%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(2px);
+  }
+  .highter::before{
+    left: 45%;
   }
   .seventh-right-wrapper::after,
   .seventh-left-wrapper::after {
     height: 1px;
-    width: calc(100% - 38px);
-    top: -6px;
+    width: calc(100% - 71px);
+    top: -10px;
   }
   .seventh-right-wrapper::after {
-    left: 25px;
+    left: 52px;
+    width: calc(100% - 76px);
+
   }
   .seventh-left-wrapper::after {
-    left: 12px;
+    left: 24px;
   }
-
+  .investment::after{
+    left: 53%;
+  }
+  .investment::before{
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
