@@ -1200,13 +1200,342 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .main {
+    width: 100vw;
+  }
+  .title {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .title-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .title::after {
+    height: 3px;
+    bottom: 1px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .logo > img {
+    width: 100%;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-}
+  .smallWidth,
+  .midwidth,
+  .middleWidth {
+    font-size: 12px;
+    min-height: 40px;
+    line-height: 0.4rem;
+  }
+  .smallWidth {
+    width: 140px;
+    font-size: 12px;
+    height: fit-content;    
+    line-height: 1rem;
+  }
+  .midwidth {
+    width: 180px;
+    height: 30px;
+    line-height: 1rem;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+  .verySmallwidth {
+    width: 92px;
+    min-height: 60px;
+    height: 60px;
+    font-size: 12px;
+    border-radius: 5px;
+    line-height: 1rem;
+  }
+  .middleWidth {
+    width: 190px;
+    min-height: 40px;
+    height: 40px;
+    
+  }
+  .wideWidth {
+    width: 240px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .second-line,
+  .third-line {
+    width: 66%;
+  }
+
+  .first-line,
+  .forth-line,
+  .fifth-line,
+  .sixth-line,
+  .second-line {
+    margin-bottom: 20px;
+  }
+  .second-line::after {
+    width: calc(100% - 180px);
+    left: 95px;
+    top: -100%;
+    height: 2px;
+    transform: translateX(3px);
+  }
+  .second-box::after,
+  .third-box::after {
+    height: 40px;
+    width: 2px;
+    left: 54%;
+  }
+  .third-box::after {
+    height: 23px;
+  }
+  .fifth-box-wrapper{
+    left: 130%;
+  }
+  .fifth-box-wrapper > div {
+    font-size: 12px;
+    margin-bottom: 4px;
+    line-height: 1rem;
+  }
+  /* green circle  */
+  .second-box::before,
+  .third-box::before,
+  .third-box-right::after,
+  .fifth-right-wrapper > .fifth-box::after,
+  .fifth-left-wrapper > .fifth-box::after,
+  .sixth-box::after,
+  .seventh-box::after,
+  .fifth-box::after {
+    height: 8px;
+    width: 8px;
+    left: 55%;
+  }
+  .fifth-right-wrapper > .fifth-box::after{
+    left: 0%;
+
+  }
+  .third-box-right::after {
+    left: 2px;
+  }
+  .third::after {
+    height: 120px;
+    width: 2px;
+    top: -99px;
+    left: -38px;
+  }
+
+  .forth-line::before {
+    border: 2px dotted black;
+    height: 62px;
+    top: -59px;
+  }
+  .forth-line::after {
+    width: 45%;
+    border: 1px dotted black;
+    top: 11px;
+  }
+  .forth-line-wrapper{
+    margin-top: 10px;
+  }
+  .forth-line-wrapper::after{
+    width: calc(100% - 166px);
+    border: 2px dotted black;
+    top: 26px;
+    transform: translateX(1px);
+  }
+  .split {
+    height: 20px;
+    margin: 10px;
+  }
+  .fifth-right-wrapper > .fifth-box::before {
+    width: 27px;
+    height: 2px;
+    bottom: 20px;
+    left: -15%;
+  }
+  .third-box-container::before {
+    height: 51px;
+    border: 2px dotted black;
+    bottom: -36px;
+    left: 49%;
+  }
+
+  .fifth-box::after {
+    height: 8px;
+    width: 8px;
+    left: 0%;
+    top: 35%;
+  }
+  .fifth-left-wrapper > .fifth-box::after {
+    right: -7px;
+  }
+  
+  .line-wrapper::before ,.line-wrapper::after  {
+    border: none;
+    height: 2px;
+    bottom: 31%;
+    background-color: black;
+    transform: translateX(1px);
+  }
+
+  .line-wrapper::before {
+    bottom: 31%;
+  }
+  .line-wrapper::after {
+    bottom: 82%;
+   }
+
+  .boss,
+  .boss-wrapper {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .boss-container::after,
+  .boss-container::before,
+  .boss::after,
+  .boss::before {
+    width: 8px;
+    height: 8px;
+  }
+  .boss::before {
+    top: -2px;
+  }
+  .boss::after {
+    left: -3px;
+    top: 8px;
+  }
+  .boss-container::after {
+    left: -3px;
+    top: 24px;
+  }
+  .boss-wrapper::after {
+    height: 161px;
+    width: 2px;
+    top: -148px;
+    left: -37px;
+  }
+  .boss-container::before {
+    right: -1px;
+    top: 24px;
+  }
+  .third-box-right::before,
+  .boss-wrapper::before {
+    height: 2px;
+    width: 37px;
+    background-color: black;
+    left: -37px;
+    bottom: 69%;
+  }
+  .third-box-right::before{
+    bottom: 49%;
+  }
+  .fifth-box-wrapper > .fifth-box::before {
+    width: 11%;
+    height: 2px;
+    top: 17px;
+    left: -20px;
+  }
+  .fifth-right-wrapper::before {
+    width: 24%;
+    height: 2px;
+    left: 95%;
+    top: 21px;
+  }
+  .fifth-box-wrapper::after {
+    height: calc(100% - 43px);
+    width: 2px;
+    top: 18px;
+    left: -10%;
+  }
+  .fifth-right-wrapper::after {
+    height: 99px;
+    width: 2px;
+    left: -26px;
+    top: -32px;
+  }
+  .sixth-line{
+    margin-bottom: 20px;
+  }
+  .sixth-line-wrapper{
+    margin-bottom: 10px;
+  }
+  .sixth-line-wrapper::after {
+    height: 1px;
+  }
+  .sixth-box::before {
+    width: 2px;
+    height: 13px;
+    bottom: -13px;
+    left: 50%;
+  }
+
+  .sixth-box::after {
+    left: 0;
+  }
+  .sixth-left::after {
+    right: -3%;
+  }
+  .seventh-center-wrapper::after {
+    height: 226px;
+    top: -214px;
+    width: 2px;
+  }
+  .colors {
+    width: 200px;
+    height: 20px;
+  }
+  .colors > div {
+    font-size: 4px;
+  }
+  .square {
+    width: 10px;
+    height: 10px;
+    border-radius:2px ;
+  }
+  .seventh-line {
+    margin-top: 10px;
+  }
+  .column {
+    row-gap: 2px;
+  }
+  .seventh-box::before {
+    height: 18px;
+    width: 2px;
+    top: -18px;
+    left: 53%;
+    transform: translateX(2px);
+  }
+  .highter::before{
+    left: 51%;
+    width: 2px;
+    height: 17px;
+    top: -16px;
+  }
+  .seventh-right-wrapper::after,
+  .seventh-left-wrapper::after {
+    height: 2px;
+    top: -17px;
+  }
+  .seventh-right-wrapper::after {
+    left: 101px;
+    width: calc(100% - 142px);
+
+  }
+  .seventh-left-wrapper::after {
+    left: 49px;
+    width: calc(100% - 134px);
+  }
+  .investment::after{
+    left: 51%;
+  }
+  .investment::before{
+    display: none;
+  }
+  .highter {
+    height: 100px;
+    min-height: 100px;
+  }
 }
